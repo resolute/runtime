@@ -1,0 +1,42 @@
+{
+    "name": "@resolute/runtime",
+    "version": "0.0.1",
+    "description": "Runtime helper functions",
+    "main": "lib",
+    "types": "lib",
+    "scripts": {
+        "build": "npm run install && npx tsc",
+        "release": "npx np",
+        "prepublishOnly": "npm run build",
+        "install": "[ -e node_modules ] || npm install --no-save"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/resolute/runtime.git"
+    },
+    "bugs": {
+        "url": "https://github.com/resolute/runtime/issues"
+    },
+    "homepage": "https://github.com/resolute/runtime",
+    "author": "Resolute Digital",
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "*",
+        "np": "*",
+        "typescript": "*"
+    },
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "pm2",
+        "process"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "ISC"
+}
