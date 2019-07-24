@@ -7,8 +7,7 @@
     "scripts": {
         "build": "npm run install && npx tsc",
         "release": "npx np",
-        "prepublishOnly": "npm run build",
-        "install": "[ -e node_modules ] || npm install --no-save"
+        "prepublishOnly": "npm run build"
     },
     "repository": {
         "type": "git",
